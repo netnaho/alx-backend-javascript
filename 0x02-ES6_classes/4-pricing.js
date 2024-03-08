@@ -1,4 +1,4 @@
-import Currency from './3-currency';
+import Currency from "./3-currency";
 
 const currency = new Currency();
 
@@ -25,7 +25,7 @@ export default class Pricing {
   }
 
   displayFulPrice() {
-    return `${this._amount} ${this._currency}_${this._currency.name} ${this._currency}_${this._currency.code}`;
+    return `${this._amount} ${this._currency}_${currency._name} ${this._currency}_${currency._code}`;
   }
 
   static convertPrice(amount, conversionRate) {
