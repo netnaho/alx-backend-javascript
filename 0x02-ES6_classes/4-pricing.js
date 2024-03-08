@@ -1,6 +1,6 @@
-import Currency from "./3-currency";
+import Currency from './3-currency';
 
-const currency = new Currency();
+const currency = new Currency(10);
 
 export default class Pricing {
   constructor(amount, currency) {
@@ -25,7 +25,7 @@ export default class Pricing {
   }
 
   displayFulPrice() {
-    return `${this._amount} ${this._currency}_${currency._name} ${this._currency}_${currency._code}`;
+    return `${this._amount} ${this._currency}_${currency.name} ${this._currency}_${currency.code}`;
   }
 
   static convertPrice(amount, conversionRate) {
