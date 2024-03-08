@@ -21,20 +21,20 @@ export default class HolbertonCourse {
     return this._name;
   }
 
-  get length() {
-    return this._length;
-  }
-
-  get students() {
-    return this._students;
-  }
-
   set name(nam) {
     this._name = nam;
   }
 
+  get length() {
+    return this._length;
+  }
+
   set length(len) {
     this._length = len;
+  }
+
+  get students() {
+    return this._students;
   }
 
   set students(stud) {
